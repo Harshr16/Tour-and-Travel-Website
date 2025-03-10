@@ -1,0 +1,171 @@
+[
+  {
+    "id": 1,
+    "name": "The Taj Mahal Palace",
+    "client_id": "Taj123",
+    "client_email": "Taj123@gmail.com",
+    "location": "Apollo Bunder, Colaba",
+    "city": "Mumbai",
+    "rent_per_night": {
+      "Standard": 14000,
+      "Deluxe": 19000,
+      "Suite": 26000
+    },
+    "image": "https://static.toiimg.com/thumb/96586810/Taj-Mahal-Palace-hotel-in-Mumbai.jpg?width=1200&height=900",
+    "amenities": ["Airport Shuttle", "Rooftop Bar", "Luxury Dining", "Spa & Wellness"],
+    "category": ["Standard", "Deluxe", "Suite"],
+    "type": "Luxury"
+  },
+  {
+    "id": 2,
+    "name": "The Leela Palace",
+    "client_id": "Leela123",
+    "client_email": "Leela123@gmail.com",
+    "location": "Diplomatic Enclave, Chanakyapuri",
+    "city": "New Delhi",
+   "rent_per_night": {
+      "Standard": 12000,
+      "Deluxe": 18000,
+      "Suite": 25000
+    },
+    "image": "https://d25wybtmjgh8lz.cloudfront.net/sites/default/files/styles/ph_masthead_1900x750/public/property/img-mastheads/22_022_Website%20Rotation_March_The%20Leela%20Palace%20Jaipur.jpg",
+    "amenities": ["Luxury Spa", "Infinity Pool", "Fine Dining", "Ocean View Rooms"],
+    "category": ["Standard", "Deluxe", "Suite"],
+    "type": "Luxury"
+  },
+  {
+    "id": 3,
+    "name": "ITC Grand Chola",
+    "client_id": "Chola123",
+    "client_email": "Chola123@gmail.com",
+    "location": "Guindy",
+    "city": "Chennai",
+   "rent_per_night": {
+      "Standard": 10000,
+      "Deluxe": 15000,
+      "Suite": 22000
+    },
+    "image": "https://www.itchotels.com/content/dam/itchotels/in/umbrella/itc/hotels/itcgrandchola-chennai/images/overview/headmast-desktop/pool-long-dusk.png",
+    "amenities": ["Business Center", "Fine Dining", "Luxury Spa", "Bar"],
+    "category": ["Standard", "Deluxe", "Suite"],
+    "type": "Luxury"
+  },
+  {
+    "id": 4,
+    "name": "The Oberoi Udaivilas",
+    "client_id": "Udaivillas123",
+    "client_email": "Udaivillas123@gmail.com",
+    "location": "Haridasji Ki Magri",
+    "city": "Udaipur",
+    "rent_per_night": {
+      "Standard": 13000,
+      "Deluxe": 18000,
+      "Suite": 27000
+    },
+    "image": "https://www.oberoihotels.com/-/media/oberoi-hotels/website-images/the-oberoi-udaivilas-udaipur/gallery/featured/udaivilas-gallery-featured-1-aerial-view-724x407.jpg",
+    "amenities": ["Luxury Spa", "Infinity Pool", "Butler Service", "Exclusive Dining"],
+    "category": ["Standard", "Deluxe", "Suite"],
+    "type": "Heritage"
+  },
+  {
+    "id": 5,
+    "name": "Radisson Blu Plaza",
+    "client_id": "Radisson123",
+    "client_email": "Radisson123@gmail.com",
+    "location": "Near IGI Airport",
+    "city": "New Delhi",
+    "rent_per_night": {
+      "Standard": 8000,
+      "Deluxe": 12000,
+      "Suite": 18000
+    },
+    "image": "https://images.trvl-media.com/lodging/2000000/1530000/1528800/1528788/73a8100f.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
+    "amenities": ["Nightclub", "Spa", "Business Lounge", "24-hour Room Service"],
+    "category": ["Standard", "Deluxe", "Suite"],
+    "type": "Business"
+  },
+  {
+    "id": 6,
+    "name": "Novotel Hyderabad Convention Centre",
+    "client_id": "Novotel123",
+    "client_email": "Novotel123@gmail.com",
+    "location": "HITEC City",
+    "city": "Hyderabad",
+    "rent_per_night": {
+      "Standard": 15000,
+      "Deluxe": 20000,
+      "Suite": 30000
+    },
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfyAMavyCzmQ_HxELCuveXgHlxJC-UGr2kDg&s",
+    "amenities": ["Free WiFi", "Swimming Pool", "Spa", "Fitness Center", "Restaurant"],
+    "category": ["Standard", "Deluxe", "Suite"],
+    "type": "Business"
+  },
+  {
+    "id": 7,
+    "name": "Fairfield by Marriott",
+    "client_id": "Marriot123",
+    "client_email": "Marriot123@gmail.com",
+    "location": "Bengaluru Outer Ring Road",
+    "city": "Bangalore",
+    "rent_per_night": {
+      "Standard": 7000,
+      "Deluxe": 11000,
+      "Suite": 16000
+    },
+    "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/66/d8/ae/exterior.jpg?w=700&h=-1&s=1",
+    "amenities": ["Pool", "Gym", "Multi-cuisine Restaurant", "Spa"],
+    "category": ["Standard", "Deluxe", "Suite"],
+    "type": "Business"
+  },
+  {
+    "id": 8,
+    "name": "The Lalit Jaipur",
+    "client_id": "Lalit123",
+    "client_email": "Lalit123@gmail.com",
+    "location": "Jagatpura Road",
+    "city": "Jaipur",
+    "rent_per_night": {
+      "Standard": 11000,
+      "Deluxe": 16000,
+      "Suite": 23000
+    },
+    "image": "https://images.trvl-media.com/lodging/6000000/5150000/5147300/5147295/0f12060c.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
+    "amenities": ["Luxury Spa", "Outdoor Pool", "Business Center", "Fine Dining"],
+    "category": ["Standard", "Deluxe", "Suite"],
+    "type": "Heritage"
+  },
+  {
+    "id": 9,
+    "name": "The Gateway Hotel",
+    "client_id": "Gateway123",
+    "client_email": "Gateway123@gmail.com",
+    "location": "Marine Drive",
+    "city": "Kochi",
+    "rent_per_night": {
+      "Standard": 6000,
+      "Deluxe": 9000,
+      "Suite": 14000
+    },
+    "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/149773522.jpg?k=2f2e0438fd5d1ac65a4666ffd465f42b793ddfceecd70536e390c12857a62fc3&o=&hp=1",
+    "amenities": ["Nightclub", "Spa", "Poolside Bar", "Luxury Dining"],
+    "category": ["Standard", "Deluxe", "Suite"],
+    "type": "Boutique"
+  },
+  { "id": 10,
+    "name": "JW Marriott",
+    "client_id": "Jw123",
+    "client_email": "Jw123@gmail.com",
+    "location": "Senapati Bapat Road",
+    "city": "Pune",
+    "rent_per_night": {
+      "Standard": 10000,
+      "Deluxe": 15000,
+      "Suite": 22000
+    },
+    "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/1e/e3/50/jw-marriott-hotel-mumbai.jpg?w=500&h=400&s=1",
+    "amenities": ["Gym", "Infinity Pool", "Luxury Dining", "Concierge Service"],
+    "category": ["Standard", "Deluxe", "Suite"],
+    "type": "Luxury"
+  }
+]
