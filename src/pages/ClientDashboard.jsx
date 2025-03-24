@@ -6,6 +6,8 @@ import { Query } from "appwrite";
 import ClientNavbar from "../common/ClientNavbar";
 import Modal from "react-modal";
 import { motion } from "framer-motion";
+import jsPDF from "jspdf";
+
 
 Modal.setAppElement("#root");
 
@@ -64,6 +66,34 @@ function ClientDashboard() {
     fetchClientData();
   }, [navigate]);
 
+  const generateInvoice = (booking) => {
+    const doc = new jsPDF();
+
+    // 🏨 Invoice Title
+    doc.setFontSize(18);
+    doc.text("Hotel Booking Invoice", 20, 20);
+
+    // 📅 Booking Details
+    doc.setFontSize(12);
+    doc.text(`Booking ID: ${booking.booking_id}`, 20, 30);
+    doc.text(`Hotel Name: ${booking.hotel_name}`, 20, 40);
+    doc.text(`Client Name: ${booking.user_name}`, 20, 50);
+    doc.text(`Email: ${booking.user_email}`, 20, 60);
+    doc.text(`Check-in Date: ${booking.check_in_date}`, 20, 70);
+    doc.text(`Check-out Date: ${booking.check_out_date}`, 20, 80);
+    doc.text(`Nights: ${booking.num_nights}`, 20, 90);
+    doc.text(`Guests: ${booking.num_guests}`, 20, 100);
+    doc.text(`Category: ${booking.category}`, 20, 110);
+    doc.text(`Total Price: Rs.${booking.total_price}`, 20, 120);
+
+    // 📄 Footer
+    doc.text("Thank you for choosing our hotel!", 20, 140);
+
+    // 🖨️ Save & Download the PDF
+    doc.save(`${booking.user_name}_${booking.booking_id}_Booking_Invoice.pdf`);
+  };
+
+
   const openModal = (booking) => {
     setSelectedBooking(booking);
     setModalIsOpen(true);
@@ -114,7 +144,7 @@ function ClientDashboard() {
     <div className="min-h-screen bg-gray-900">
       <ClientNavbar />
       <div className="p-26 flex items-center justify-center">
-        <div className="w-full max-w-7xl bg-white p-10 rounded-xl shadow-lg border border-gray-300">
+        <div className="w-full max-w-9xl bg-white p-10 rounded-xl shadow-lg border border-gray-300">
           <h1 className="text-3xl text-center font-bold text-blue-600 mb-6">Client Dashboard</h1>
           {client ? (
             <div className="mb-6 text-center">
@@ -129,7 +159,7 @@ function ClientDashboard() {
             <table className="table-auto w-full border-collapse bg-white shadow-md rounded-lg border border-gray-300">
               <thead className="bg-blue-600 text-white">
                 <tr>
-                  {["User Name", "User Email", "Hotel", "Check-in & Check-out", "Nights", "Guests", "Category", "Total Price", "Booking Id", "Action"].map((header) => (
+                  {["User Name", "User Email", "Hotel", "Check-in & Check-out", "Nights", "Guests", "Category", "Total Price", "Booking Id", "Action","Print"].map((header) => (
                     <th key={header} className="px-4 py-3 border text-center">{header}</th>
                   ))}
                 </tr>
@@ -150,6 +180,10 @@ function ClientDashboard() {
                       <td className="px-4 py-3 border text-center">
                         <button onClick={() => openModal(booking)} className="bg-indigo-500 text-white px-3 py-1 rounded-md hover:bg-indigo-700 transition">Cancel</button>
                       </td>
+                      <td className="px-4 py-3 border text-center">
+                        <button onClick={() => generateInvoice(booking)} className="bg-green-500 text-white px-3 py-1 rounded-md hover:bg-green-700 transition">Download Invoice </button>
+                      </td>
+
                     </tr>
                   ))
                 ) : (

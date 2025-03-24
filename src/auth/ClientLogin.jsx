@@ -85,7 +85,7 @@ function ClientLogin({ closeModal, setCurrentUser }) {
   const validate = (values) => {
     const errors = {};
     const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-    if (!values.email.trim()) errors.email = "Email is required";
+    if (!values.email.trim()) errors.email = "Email is required"; 
     else if (!regexEmail.test(values.email)) errors.email = "Enter a valid email";
     if (!values.password.trim()) errors.password = "Password is required";
     else if (values.password.length < 8) errors.password = "Password must be at least 8 characters";
